@@ -39,12 +39,12 @@ let router = new Router({
           component: study
         },
         {
-          path: '/work',
+          path: 'work',
           name: 'work',
           component: work
         },
         {
-          path: '/hobby',
+          path: 'hobby',
           name: 'hobby',
           component: hobby
         }

@@ -1,8 +1,7 @@
 <template>
     <div class="content">
       <ul class="nav">
-        <!--<router-link v-for="item in nav" :key="item.id" :to="`${item.url}`" tag="li" exact>-->
-        <router-link v-for="item in nav" :key="item.id" :to="{name: item.name}" tag="li" :exact="item.id == 4 ? true : false">
+        <router-link v-for="item in nav" :key="item.id" :to="{name: item.name}" tag="li" :exact="item.id == 1 ? true : false">
           <i class=""></i>
           <p>{{item.page}}</p>
         </router-link>
@@ -18,9 +17,9 @@ export default {
   data () {
     return {
       nav: [
-        { id: 4, page: 'study', url: '/about', name: 'AboutView' },
-        { id: 5, page: 'work', url: '/about/work', name: 'work' },
-        { id: 6, page: 'hobby', url: '/about/hobby', name: 'hobby' }
+        { id: 1, page: 'study', url: '/about', name: 'AboutView' },
+        { id: 2, page: 'work', url: '/about/work', name: 'work' },
+        { id: 3, page: 'hobby', url: '/about/hobby', name: 'hobby' }
       ]
     }
   }
