@@ -2,7 +2,7 @@
   <div id="app">
     <div class="nav-box">
       <ul class="nav">
-          <router-link v-for="item in nav" :key="item.id" :to="`${item.url}`" tag="li">
+          <router-link v-for="item in nav" :key="item.id" :to="`${item.url}`" tag="li" :exact="item.id == 1 ? true : false">
               <i class=""></i>
               <p>{{item.page}}</p>
           </router-link>
@@ -65,7 +65,7 @@ export default {
   color: #000;
   text-decoration: none;
 }
-.router-link-active{
+.is-active{
   background-color: #f60;
   color: #fff;
 }

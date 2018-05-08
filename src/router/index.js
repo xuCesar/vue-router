@@ -12,11 +12,10 @@ Vue.use(Router)
 
 let router = new Router({
   mode: 'history',
-  // linkActiveClass: 'is-active',
+  linkActiveClass: 'is-active',
   routes: [
     {
       path: '/',
-      name: 'HomeView',
       component: HomeView
     },
     {
@@ -32,7 +31,6 @@ let router = new Router({
     },
     {
       path: '/about',
-      // name: 'AboutView',
       component: AboutView,
       children: [
         {
@@ -41,12 +39,12 @@ let router = new Router({
           component: study
         },
         {
-          path: 'work',
+          path: '/work',
           name: 'work',
           component: work
         },
         {
-          path: 'hobby',
+          path: '/hobby',
           name: 'hobby',
           component: hobby
         }
