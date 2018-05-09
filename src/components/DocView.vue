@@ -1,5 +1,6 @@
 <template>
-    <div>{{msg}}</div>
+  <!--<router-view name="side"/>-->
+  <div style="height: 1000px;">{{msg}}</div>
 </template>
 
 <script>
